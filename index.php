@@ -1,4 +1,11 @@
 <?php
+  Database::$host = "localhost";
+  Database::$user = "root";
+  Database::$pass = "";
+  Database::$dbName = "pokemon";
+
+  Database::connect();
+
 
 if (isset($_GET['search']) &&  ($_GET['category'])) {
     	$search = $_GET['search'];
